@@ -17,8 +17,9 @@ function addToCart(item) {
 }
 
 function viewCart() {
+var current = "In your cart, you have ";
+if(cart.length > 0) {
  for(let i = 0; i < cart.length; i++) {
-   current = "In your cart, you have "
    if(cart.length < 2) {
      current = current + obj.key(cart[i]) + " at " + obj.value(cart[i]) + "."
    } 
@@ -32,6 +33,7 @@ function viewCart() {
    }
  }
  return current;
+}
 }
 
 function total() {
