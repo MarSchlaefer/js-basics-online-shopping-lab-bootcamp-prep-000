@@ -20,17 +20,18 @@ function viewCart() {
  for(let i = 0; i < cart.length; i++) {
    current = "In your cart, you have "
    if(cart.length < 2) {
-     current = current + obj.key(cart[i]) + " at " + obj.value(cart[i])
+     current = current + obj.key(cart[i]) + " at " + obj.value(cart[i]) + "."
    } 
    if(cart.length < 3) {
-     
+     current = current + obj.key(cart[i]) + " at " + obj.value(cart[i])
    }
    if(cart.length >= 3) {
-     
+     current = current + obj.key(cart[i]) + " at " + obj.value(cart[i])
    } else {
      console.log("Your shopping cart is empty.")
    }
  }
+ return current;
 }
 
 function total() {
