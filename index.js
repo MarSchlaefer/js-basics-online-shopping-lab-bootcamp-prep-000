@@ -28,7 +28,7 @@ function viewCart() {
    if(cart.length >= 3) {
      
    } else {
-     return "Your shopping cart is empty."
+     console.log("Your shopping cart is empty.")
    }
  }
 }
