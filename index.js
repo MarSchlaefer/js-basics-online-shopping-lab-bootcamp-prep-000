@@ -29,11 +29,11 @@ if(cart.length > 0) {
    if(cart.length >= 3) {
      current = current + obj.key(cart[i]) + " at " + obj.value(cart[i])
    } 
+ } 
  } else {
      console.log("Your shopping cart is empty.")
- }
- return current;
 }
+  return current;
 }
 
 function total() {
