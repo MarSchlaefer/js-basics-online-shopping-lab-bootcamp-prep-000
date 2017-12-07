@@ -18,6 +18,7 @@ function addToCart(item) {
 
 function viewCart() {
  for(let i = 0; i < cart.length; i++) {
+   
    if(cart.length < 2) {
      
    } 
@@ -27,7 +28,7 @@ function viewCart() {
    if(cart.length >= 3) {
      
    } else {
-     
+     return "Your shopping cart is empty."
    }
  }
 }
