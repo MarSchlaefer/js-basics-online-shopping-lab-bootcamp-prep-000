@@ -29,7 +29,7 @@ function viewCart() {
     let itemName = Object.keys(itemObj)[0];
     
     if (cart.length === 1) {
-      currentCart = `${current}${itemName} at $${cart[0]}.`
+      currentCart = `${currentCart}${itemName} at $${cart[0]}.`
       
       console.log(currrentCart);
     }
