@@ -12,17 +12,32 @@ function setCart(c) {
 function addToCart(item) {
   var obj = {[item]: Math.floor(Math.random() * 100)}
   cart.push(obj)
+  
   console.log(item + " has been added to your cart.")
   return cart;
 }
 
 function viewCart() {
-  var current = "In your cart, you have "
-  if (cart.length === 0) {
-    current = "Your shopping cart is empty."
-    return current;
+  var currentCart = "In your cart, you have "
+    
+    if (cart.length === 0) {
+      console.log("Your shopping cart is empty.")
+    }
+  
+  for (let i = 0; i < cart.length; i++) {
+    let itemObj = cart[i];
+    let itemName = Object.keys(itemObj)[0];
+    
+    if (cart.length === 1) {
+      currentCart = `${current}${itemName} at $${cart[0]}.`
+      
+      console.log(currrentCart);
+    }
+  
+    if (cart.length === 2) {
+    
+    }
   }
-  return current;
 }
 
 function total() {
