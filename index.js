@@ -48,7 +48,7 @@ function viewCart() {
       
       let lastItem = cart.length - 1;
       
-      cartContents += `${cartItems} and ${Object.keys(lastItem)} at ${lastItem[Object.keys(lastItem)]}.`
+      cartContents += `${cartItems} and ${Object.keys(lastItem)} at $${lastItem[Object.keys(lastItem)]}.`
       
       return console.log(cartContents);
   
@@ -61,13 +61,22 @@ function total() {
   for (let i = 0; i < cart.length; i++) {
     let currItem = cart[i];
     
-    currentTotal += currItem.item;
+    currentTotal += currItem[Object.keys(currItem)];
   }
   return currentTotal;
 }
 
 function removeFromCart(item) {
-  // write your code here
+  for (let i = 0; i < cart.length; i++) {
+    let currItem = cart[i];
+    
+    if (currItem.hasOwnProperty(item)) {
+      cart.splice(i, 1);
+      return cart;
+    } else {
+      return 'That item is not in your cart';
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
