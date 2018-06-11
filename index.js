@@ -34,7 +34,7 @@ function viewCart() {
 
       cartContents += `${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]} and ${Object.keys(cart[1])} at $${cart[1][Object.keys(cart[1])]}.`;
 
-      return console.log(cartContents);
+      return (cartContents);
     }
     
     else {
@@ -54,7 +54,7 @@ function viewCart() {
       cartContents += `${cartItems} and ${Object.keys(lastItem)} at $${lastItem[Object.keys(lastItem)]}.`
 
       }
-      return console.log(cartContents);
+      return (cartContents);
     }    
 }
 
@@ -74,7 +74,7 @@ function removeFromCart(item) {
     let currItem = cart[i];
     
     if (currItem.hasOwnProperty(item)) {
-      cart.splice(i, 1);
+      cart.prototype.splice(i, 1);
       return cart;
     } else {
       return 'That item is not in your cart';
