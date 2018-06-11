@@ -29,17 +29,6 @@ function viewCart() {
     if (cart.length === 1) {
       cartContents += `${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]}.`
 
-  let cartContents = 'In your cart you have ';
-    
-    if (cart.length === 0) {
-      return console.log("Your cart is empty.")
-    }
-    
-    if (cart.length === 1) {
-      cartContents += `${Object.keys(cart[0])} at $${obj.cart[0]}.`
-
-      return console.log(cartContents);
-    }
     
     if (cart.length === 2) {
 
@@ -67,7 +56,6 @@ function viewCart() {
       }
       return console.log(cartContents);
     }    
-  }
 }
 
 function total() {
