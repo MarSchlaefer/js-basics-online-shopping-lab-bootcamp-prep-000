@@ -53,7 +53,7 @@ function viewCart() {
         }
       }
       
-      let lastItem = cart.length - 1;
+      let lastItem = cart[cart.length - 1];
       
       cartContents += `${cartItems}and ${Object.keys(lastItem)} at $${lastItem[Object.keys(lastItem)]}.`
       
