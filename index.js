@@ -37,7 +37,7 @@ function viewCart() {
 
       cartContents += `${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]} and ${Object.keys(cart[1])} at $${cart[1][Object.keys(cart[1])]}.`;
 
-      console.log(cartContents)
+      console.log(cartContents);
       return cartContents;
     }
     
@@ -56,9 +56,10 @@ function viewCart() {
       let lastItem = cart.length - 1;
       
       cartContents += `${cartItems} and ${Object.keys(lastItem)} at $${lastItem[Object.keys(lastItem)]}.`
-
+      
       }
-      return console.log(cartContents);
+      console.log(cartContents);
+      return cartContents;
     }    
 
 
