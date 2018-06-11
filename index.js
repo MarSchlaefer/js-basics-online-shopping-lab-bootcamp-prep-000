@@ -28,13 +28,15 @@ function viewCart() {
     
     if (cart.length === 1) {
       cartContents += `${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]}.`
-
+    
+      return cartContents;
+    }
     
     if (cart.length === 2) {
 
       cartContents += `${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]} and ${Object.keys(cart[1])} at $${cart[1][Object.keys(cart[1])]}.`;
 
-      return (cartContents);
+      return cartContents;
     }
     
     else {
@@ -54,9 +56,10 @@ function viewCart() {
       cartContents += `${cartItems} and ${Object.keys(lastItem)} at $${lastItem[Object.keys(lastItem)]}.`
 
       }
-      return (cartContents);
+      return console.log(cartContents);
     }    
-}
+
+
 
 function total() {
   let currentTotal = 0;
