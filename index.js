@@ -28,9 +28,12 @@ function viewCart() {
     
     if (cart.length === 1) {
       cartContents += `${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]}.`
+<<<<<<< HEAD
       
       console.log(cartContents);
       return cartContents;
+=======
+>>>>>>> e610d23f04d9d2cc0c72342b01453666eda6f83f
     }
     
     if (cart.length === 2) {
@@ -63,6 +66,14 @@ function viewCart() {
   }    
 
 
+<<<<<<< HEAD
+=======
+      }
+      return console.log(cartContents);
+    }    
+
+
+>>>>>>> e610d23f04d9d2cc0c72342b01453666eda6f83f
 
 function total() {
   let currentTotal = 0;
